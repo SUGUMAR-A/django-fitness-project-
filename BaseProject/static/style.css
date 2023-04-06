@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap');
+
+html {
+  font-size: 14px;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: top;
+  height: 60vh;
+  overflow: hidden;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel-item img {
+  
+    object-fit:fill;
+    object-position:top;
+    height: 60vh;
+    overflow: hidden;
+  }
+.fedcol{
+  box-shadow: 2px salmon;
+   
+  }
+.fedcol img{
+  border-radius: 15px;
+  }
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+.full_boxer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+.box_top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.comment_box{
+  width: 700px;
+ 
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 3px 3px 25px rgba(0,0,0,0.3);
+
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+.profile_img{
+  width: 70px;
+  height: 70px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+.profile_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+}
+.name{
+  display: flex;
+  flex-direction: column;
+  margin-left:10px ;
+}
+
+.landimg{
+  width:300px;
+  height: 300px;
+}
+.name{
+  width: 140px;
+  padding: 2px;
+  
+ 
+}
+.name strong{
+  padding-left:10px;
+  color: #ff044f;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.name span{
+  color: gray;
+  padding-left: 15px;
+
+}
+.comment{  box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+border-radius: 20px;
+height: inherit;
+}
+@media (min-width:530px) {
+
+  .landimg{
+    width: 100%;
+  }
+}
+@media (min-width:370px) {
+
+  .landimg{
+    width: 100%;
+  }
+}
+.Edit{
+  padding:2px 20px;
+  margin-left: 10px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  color: white;
+
+}
+.Delete{
+  padding:2px 20px;
+  margin-left: 10px;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  color: white;
+
+}
+.Edit a{
+  width: 100%;
+}
+
+.profile_imgs img{
+  border-radius: 20px;
+}
+figure {
+  overflow: hidden;
+  transition: all 2s ease-in;
+}
+figure img{
+  overflow: hidden;
+  transition: all 1s ease-in;
+}
+figure img:hover{
+  transform: scale(1.4);
+}

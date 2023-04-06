@@ -1,0 +1,23 @@
+{% extends 'basic/index.html' %}
+
+{% load static %}
+
+{% block content %}
+{% include 'basic/message.html' %}
+<div class="container mb-5 mt-3">
+    <div class="row">
+        <div class="col-12 d-flex flex-column">
+            <h3 class="text-danger"><span class="text-success">Edit</span> comments</h3>
+            <form method="post" action="" autocomplete="off">
+                {% csrf_token %}
+                {% for item in feed %}
+                <div class="mb-4">
+                  <input type="text" class="form-control text-dark" placeholder="Type Your comments... " name="txt" id="txt" value="{{item.comment}}." style="font-size: 26px;"> 
+                </div>
+                <button type="submit" class="btn btn-success">Comment</button>
+                {% endfor %}
+          </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

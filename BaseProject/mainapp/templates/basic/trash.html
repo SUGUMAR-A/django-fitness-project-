@@ -1,0 +1,25 @@
+<div class="container-fluid" >
+    <div class="row ">
+        <div class="col-4 text-capitalize col-xs-8 col-md-4">
+            <h3 style=" color:rgb(117, 108, 108);"><span class="text-primary">Username : </span>{{request.user}}</h3><br>
+            <h3 style=" color:rgb(117, 108, 108);"><span class="text-primary">User Email : </span>{{request.user.email}}</h3><br>
+        </div>
+        
+                <div class="col-6 col2" style="border-left: 2px solid black;">
+                    <h4><span class="text-primary">About : </span></h4>
+                    <h3 style=" color:rgb(117, 108, 108);padding:20px;">{{items.about}}</h3><br>
+                </div>
+                <div class="col-2 col3" style="border-left: 2px solid black;">
+                    <img src="{{ items.images.url }}" alt="Profile photo" width="204px" height="210px" style="left:0;border-radius:50%; box-sizing:border-box;overflow:hidden; border:3px solid #ffc107; "><br>
+                </div>
+            
+            <div class="col-6 col2" style="border-left: 2px solid black;">
+                <h4><span class="text-primary">About : </span></h4>
+                <h3 style=" color:rgb(117, 108, 108);"> </h3><br>
+            </div>
+            <div class="col-2 col3" style="border-left: 2px solid black;">
+                <span style="text-align:center; padding:30px;">upload your photo </span>
+                <img src="{% static 'images/user-default.png' %}" alt="upload photo" width="204px" height="210px" style="left:0;border-radius:50%; box-sizing:border-box;overflow:hidden; border:3px solid #ffc107"><br>
+            </div> 
+    {% endif %}
+    </div>53
